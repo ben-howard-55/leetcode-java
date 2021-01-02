@@ -1,2 +1,2 @@
 # leetcode-java
-Repo where I place leetcode solutions for future refrence / reflection.
+Repo where I place leetcode solutions for future reference / reflection.
