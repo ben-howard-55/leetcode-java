@@ -8,7 +8,7 @@
 
 
 
-#### Remove Duplicates from Sorted Array
+### Remove Duplicates from Sorted Array
 
 20-11-2020
 
@@ -40,7 +40,7 @@ However, the problem requires a fast runner and slow runner. The slow runner onl
 
 ---
 
-#### Best Time to Sell and Buy Stock II	
+### Best Time to Sell and Buy Stock II	
 
 20-11-2020
 
@@ -98,7 +98,7 @@ On the last day it is also important to sell the stock if it can be sold for mor
 
 ---
 
-#### Rotate Array
+### Rotate Array
 
 21-11-2020
 
@@ -140,7 +140,7 @@ simply swap the elements from the end of the array to the index position, do thi
 
 ---
 
-#### Contains Duplicates
+### Contains Duplicates
 
 22-11-2020
 
@@ -214,7 +214,7 @@ $$
 
 ---
 
-#### Single Number
+### Single Number
 
 23-11-2020
 
@@ -293,7 +293,9 @@ for (int x: nums) {
 return a;
 ```
 
-#### Intersection of Two Arrays II
+---
+
+### Intersection of Two Arrays II
 
 ###### Constraints
 
@@ -335,7 +337,9 @@ class Solution {
 
 First HashMap uses the int as a key to point to the value of number of times appeared. Each time the same element is in the second array, it subtracts one from the value and adds the key value to the list. Then the list is changed to an array and then returned.
 
-#### Plus One
+---
+
+### Plus One
 
 25-11-2020
 
@@ -381,9 +385,9 @@ class Solution {
 
 Not the most elegant solution. However, the problem should be broken down into its components.
 
-####
+---
 
-#### Two Sum
+### Two Sum
 
 28-11-2020
 
