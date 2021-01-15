@@ -121,5 +121,60 @@ Run through the String and grab each `charAt(i);`, add it to the HashMap as the 
 
 Then each char in the string must be looked at in the map to see if a char key has a value of only 1. If so `return i;`. Else `return -1;` 
 
+---
+
+### Implement Strstr
+
+16-01-2021
+
+#### constraints
+
+~~~
+Write an efficient algorithm to implement strstr function in Java which returns the index of first occurrence of a string in another string.
+~~~
+
+#### Code Solution
+
+```Java
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int n = needle.length();
+        int h = haystack.length();
+        
+        if (n == 0) return 0;
+        
+        if (needle.equals(haystack)) return 0;
+        
+        if (n > h) return -1;
+        
+        for (int i = 0; i < h - n + 1; i++) {
+            for (int j = 0; j < n; j++) {
+                if (needle.charAt(j) != haystack.charAt(i+j)) {
+                    break;
+                } 
+                if (n-1 == j) {
+                    return i;
+                }
+            }
+        } 
+    		return -1;
+    }
+}
+```
+
+####  Explanation of Solution
+
+The initial checks are just for outliers that could occur. The rest is quite simple:
+
+Simply iterate through the haystack string and check if the char is the same as the char at the first index of the needle. If not break and check the next. 
+
+Else check if the last index of the needle is the char selected and if so return the index.
+
+Keep iterating until either the inner for loop breaks or it `returns i`.
+
+Move on to the next char in the haystack. `return -1` if no match found.
+
+---
+
 
 
